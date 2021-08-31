@@ -10,7 +10,7 @@ services:
       - discovery.type=single-node
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms1536m -Xmx1536m"
-      - ELASTICSEARCH_USERNAME=elastic_usr
+      #- ELASTICSEARCH_USERNAME=elastic # default user can not change when initating docker
       - ELASTICSEARCH_PASSWORD=password
     ulimits:
       memlock:
