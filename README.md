@@ -8,7 +8,7 @@ const {
 const client = new Client({
     node: 'http://192.168.1.57:9200',
     auth: {
-        username: "user_name",
+        username: "elastic",// default user of es when initating with docker
         password: "password"
     }
 })
