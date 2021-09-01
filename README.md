@@ -1,8 +1,18 @@
-## ES cluster require vm.max_map_count=262144. You might to set your host VPS before start docker-compose to launch vm
+### To Success mount the host folder to docker volume. You might need to change these folder volume to be owned by 1000:1000
+
+```
+mkdir app_volume
+
+sudo chown 1000:1000 <directory you wish to mount>
+
+```
+
+
+### ES cluster require vm.max_map_count=262144. You might to set your host VPS before start docker-compose to launch vm
 
 sudo sysctl -w vm.max_map_count=262144
 
-## elasticsearch-docker
+### elasticsearch-docker
 
 ```
 
