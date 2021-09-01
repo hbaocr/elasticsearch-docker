@@ -1,8 +1,8 @@
-# ES cluster require vm.max_map_count=262144. You might to set your host VPS before start docker-compose to launch vm
+## ES cluster require vm.max_map_count=262144. You might to set your host VPS before start docker-compose to launch vm
 
 sudo sysctl -w vm.max_map_count=262144
 
-# elasticsearch-docker
+## elasticsearch-docker
 
 ```
 
