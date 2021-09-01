@@ -11,7 +11,8 @@ services:
       - "ES_JAVA_OPTS=-Xms1536m -Xmx1536m"
       - bootstrap.memory_lock=true
       #- ELASTICSEARCH_USERNAME=elastic # default user can not change when initating docker
-      - ELASTICSEARCH_PASSWORD=7ClB4Fg2lMBWx3CtMpTV1
+      - ELASTICSEARCH_PASSWORD=password
+      - xpack.security.enabled=true # enable password
     ulimits:
       memlock:
         soft: -1
